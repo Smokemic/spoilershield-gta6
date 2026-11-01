@@ -1,0 +1,51 @@
+{
+  "manifest_version": 2,
+  "name": "SpoilerShield GTA 6",
+  "version": "1.2",
+  "description": "Blurs GTA 6 leaks and spoilers on web pages. / Macht GTA-6-Leaks und Spoiler unscharf.",
+  "content_scripts": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "css": [
+        "content/style.css"
+      ],
+      "js": [
+        "common/i18n.js",
+        "content/matcher.js",
+        "content/content.js"
+      ],
+      "run_at": "document_start"
+    }
+  ],
+  "browser_action": {
+    "default_popup": "popup/popup.html",
+    "default_icon": {
+      "48": "icons/icon-48.png",
+      "96": "icons/icon-96.png"
+    },
+    "default_title": "SpoilerShield"
+  },
+  "options_ui": {
+    "page": "options/options.html",
+    "open_in_tab": true
+  },
+  "permissions": [
+    "storage"
+  ],
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "spoilershield@gta6.ext",
+      "data_collection_permissions": {
+        "required": [
+          "none"
+        ]
+      }
+    }
+  },
+  "icons": {
+    "48": "icons/icon-48.png",
+    "96": "icons/icon-96.png"
+  }
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<title data-i18n="opt_title">SpoilerShield</title>
+<link rel="stylesheet" href="options.css">
+</head>
+<body>
+  <h1 data-i18n="opt_title"></h1>
+  <form id="settingsForm">
+    <fieldset>
+      <legend data-i18n="opt_lang"></legend>
+      <label><input type="radio" name="language" value="auto"> <span data-i18n="lang_auto"></span></label>
+      <label><input type="radio" name="language" value="de"> <span>Deutsch</span></label>
+      <label><input type="radio" name="language" value="en"> <span>English</span></label>
+    </fieldset>
+
+    <fieldset>
+      <legend data-i18n="opt_display"></legend>
+      <label><input type="radio" name="display" value="blur"> <span data-i18n="opt_blur"></span></label>
+      <label><input type="radio" name="display" value="hide"> <span data-i18n="opt_hide"></span></label>
+    </fieldset>
+
+    <fieldset>
+      <legend data-i18n="opt_mode"></legend>
+      <label><input type="radio" name="mode" value="leaks"> <span data-i18n="opt_leaks"></span></label>
+      <label><input type="radio" name="mode" value="alles"> <span data-i18n="opt_all"></span></label>
+      <label><input type="checkbox" id="coverSearch"> <span data-i18n="opt_cover"></span></label>
+    </fieldset>
+
+    <fieldset>
+      <legend data-i18n="opt_keywords"></legend>
+      <textarea id="keywords" rows="7"></textarea>
+    </fieldset>
+
+    <fieldset>
+      <legend data-i18n="opt_whitelist"></legend>
+      <textarea id="whitelist" rows="4"></textarea>
+    </fieldset>
+
+    <div class="buttons">
+      <button type="submit" data-i18n="opt_save"></button>
+      <button type="button" id="export" data-i18n="opt_export"></button>
+      <button type="button" id="import" data-i18n="opt_import"></button>
+      <input type="file" id="importFile" accept=".json,application/json" hidden>
+    </div>
+  </form>
+  <script src="../common/i18n.js"></script>
+  <script src="options.js"></script>
+</body>
+</html>
