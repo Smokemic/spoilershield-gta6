@@ -1,6 +1,6 @@
 # SpoilerShield GTA 6
 
-Firefox Addon: (in review: https://addons.mozilla.org/en-US/firefox/addon/spoilershield-gta-6/)
+Firefox Addon: out now:  https://addons.mozilla.org/en-US/firefox/addon/spoilershield-gta-6/
 
 **DE:** Firefox-/Waterfox-Erweiterung, die GTA-6-Leaks und -Spoiler auf Webseiten unscharf macht oder ausblendet. Gedacht für alle, die auf den Release warten und sich nichts spoilern lassen wollen.
 
@@ -25,6 +25,8 @@ Firefox Addon: (in review: https://addons.mozilla.org/en-US/firefox/addon/spoile
   / Privacy: everything runs locally, no network requests, no tracking
 
 ## Installation (Entwickler / developer)
+
+Firefox Add On out now: https://addons.mozilla.org/en-US/firefox/addon/spoilershield-gta-6/
 
 1. Repository klonen oder als ZIP herunterladen / clone or download the repo
 2. Firefox oder Waterfox: `about:debugging` öffnen, "Dieser Firefox", "Temporäres Add-on laden…"
